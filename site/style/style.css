@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins&display=swap');
+
+* {
+  text-decoration: none;
+  cursor: pointer;
+  color: #eee;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  background-color: #1c1d26;
+  z-index: -2;
+}
+
+.cover > h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.cover h1 {
+  padding-right: 5px;
+}
+
+.cover p {
+  margin: 15px;
+  text-align: center;
+}
+
+.cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover button {
+  margin: 5px;
+  width: 140px;
+  height: 45px;
+  background-color: #e44c75;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 3px;
+  transition: all;
+}
+
+.cover button:hover {
+  transform: scale(1.1);
+  background-color: #e6416d;
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: #283850;
+}
+
+#nav {
+  padding-left: 80%;
+}
+
+.nav-links {
+  width: 35%;
+  min-width: 400px;
+}
+
+.logo > h2 {
+  letter-spacing: 3px;
+}
+
+.dropbtn {
+  font-size: 14px;
+  padding: 10px 10px;
+  border: 2px solid #e44c75;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #e44c75;
+  transition-duration: 300ms;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #283850;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #1c1d26;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #eee;
+  background-color: #e6416d;
+}
+
+h2 > span {
+  color: #e44c75;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links a:hover {
+  transition-duration: 300ms;
+  color: #e44c75;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #181820;
+  background-attachment: fixed;
+}
+ 
+.cont{
+  position: relative;
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cont .card{
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background: #eee;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition:0.5s;
+}
+
+.cont .card .circle{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cont .card .circle h2{
+  color: #fff;
+  font-size: 4.5em;
+  padding: 30px 0;
+}
+
+.cont .card .content{
+  position: relative;
+  bottom: 245px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cont .card .content p{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.cont .card .content a{
+ position: relative;
+ display: inline-block;
+ padding: 10px 20px;
+ background: #000;
+ border-radius: 40px;
+ margin-top: 40px;
+}
+
+.cont .card:nth-child(1) .circle,
+.cont .card:nth-child(1) .content a{
+  background: #e44c75;
+}
+.cont .card:nth-child(2) .circle,
+.cont .card:nth-child(2) .content a{
+  background: #e44c75;
+}
+.cont .card:nth-child(3) .circle,
+.cont .card:nth-child(3) .content a{
+  background: #e44c75;
+}
+
+.cont:hover .card{
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.cont .card:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #1c1d26;
+  padding: 70px 0;
+  font-family: 'Poppins', sans-serif;
+  height: 200px;
+  width: 100%;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e44c75;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 7px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  li > button {
+    font-size: 16px;
+    /*padding: 8px 16px;*/
+  }
+
+  nav {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .logo > h2 {
+    font-size: 20px;
+  }
+
+  #nav {
+    padding-left: 30%;
+  }
+
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px){
+  .footer {
+  height: 550px;
+  }
+
+  .footer-col{
+  width: 100%;
+  }
+}
